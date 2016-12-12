@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+{{> header }}
+<body>
+	<header>
+		{{> main_nav }}
+	</header>
+
+	{{{ contents }}}
+
+	{{#if project}}
+	{{> project_index }}
+	{{/if}}
+
+</body>
+</html>
