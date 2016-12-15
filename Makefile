@@ -3,6 +3,9 @@ DEST = ubuntu@poyu.xyz:~/poyu.xyz/
 build: node_modules
 	node index.js
 
+dev: node_modules
+	node dev.js
+
 node_modules: package.json
 	npm install
 
@@ -12,4 +15,4 @@ clean:
 deploy: clean build
 	rsync -azPI build/ $(DEST)
 
-.PHONY: build clean deploy
+.PHONY: build dev clean deploy
