@@ -4,6 +4,9 @@ var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
 var collections = require('metalsmith-collections');
 var dateFormatter = require('metalsmith-date-formatter');
+var debug = require('metalsmith-debug');
+var watch = require('metalsmith-watch');
+var serve = require('metalsmith-serve');
 
 Metalsmith(__dirname)
 .metadata({})
@@ -28,6 +31,16 @@ Metalsmith(__dirname)
   engine: 'handlebars',
   partials: './partials'
 }))
+.use(debug())
+.use(watch({
+  paths: {
+    "${source}/**/*": true,
+    "./partials/**/*": "**/*",
+    "./layouts/**/*": "**/*",
+  }
+})
+)
+.use(serve())
 .build(function(err, files) {
   if (err) { throw err; }
 });
