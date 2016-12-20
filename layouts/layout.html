@@ -5,12 +5,14 @@
 	<header>
 		{{> main_nav }}
 	</header>
+	<div class="container">
+		{{{ contents }}}
 
-	{{{ contents }}}
-
-	{{#if project}}
-	{{> project_index }}
-	{{/if}}
-
+		{{#if project}}
+		{{> project_index }}
+		{{/if}}
+	</div>
+	
+	{{> footer }}
 </body>
 </html>
