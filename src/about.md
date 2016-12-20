@@ -7,4 +7,10 @@ order: 3
 
 # About Me
 
-Something inspiring...
+** *Hardware hacker, software tinkerer, Sometimes photographs.* **
+
+Hi, my name is Poyu Chen, and I'm from Taiwan. Moving to the States in 2017.
+
+Majored in Electronics Engineering, but loves to program the Web. IoT is my favorite subject now, so I get the best of two worlds.
+
+If you're interested in contacting me, feel free to shoot me an email: <me@poyu.xyz>.
