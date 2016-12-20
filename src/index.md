@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Home
+nav: home
 collection: page
 order: 1
 ---

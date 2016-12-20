@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Projects
+nav: projects
 collection: page
 order: 2
 project: true

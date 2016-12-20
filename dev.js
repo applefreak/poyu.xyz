@@ -7,12 +7,15 @@ var dateFormatter = require('metalsmith-date-formatter');
 var debug = require('metalsmith-debug');
 var watch = require('metalsmith-watch');
 var serve = require('metalsmith-serve');
+var drafts = require('metalsmith-drafts');
+var helpers = require('handlebars-helpers')();
 
 Metalsmith(__dirname)
 .metadata({})
 .source('./src')
 .destination('./build')
 .clean(true)
+.use(drafts())
 .use(markdown())
 .use(dateFormatter({
   format: 'MM/DD/YYYY'
