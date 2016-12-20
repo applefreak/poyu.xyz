@@ -1,5 +1,5 @@
 <nav>
 	{{#each page}}
-	<a href="/{{path}}">{{title}}</a>
+	<a {{#eq ../nav nav}}class="active"{{/eq}} href="/{{path}}">{{title}}</a>
 	{{/each}}
 </nav>

@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: About Me
+nav: about
 collection: page
 order: 3
 ---
