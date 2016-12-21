@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+{{> header }}
+<body>
+	<header>
+		{{> main_nav }}
+	</header>
+	<a class="btn" href="/project"><- Back to Index</a>
+	<div class="container">
+		{{{ contents }}}
+
+		{{#if project}}
+		{{> project_index }}
+		{{/if}}
+	</div>
+	
+	{{> footer }}
+</body>
+</html>

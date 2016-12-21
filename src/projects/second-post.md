@@ -1,7 +1,7 @@
 ---
 title: My Second Post
 date: 2012-08-23
-layout: layout.html
+layout: project.html
 collection: projects
 nav: projects
 ---
