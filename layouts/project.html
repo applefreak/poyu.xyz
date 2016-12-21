@@ -7,11 +7,14 @@
 	</header>
 	<a class="btn" href="/project"><- Back to Index</a>
 	<div class="container">
+		<div>
+			<b>Created</b>: {{ date }}
+			<br>
+			{{#if updated}}
+			<b>Updated</b>: {{ updated }}
+			{{/if}}
+		</div>
 		{{{ contents }}}
-
-		{{#if project}}
-		{{> project_index }}
-		{{/if}}
 	</div>
 	
 	{{> footer }}

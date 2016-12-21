@@ -4,9 +4,10 @@ date: 2012-08-20
 layout: project.html
 collection: projects
 nav: projects
+draft: true
 ---
 
-# MacDown
+# MacDown or Markdown reference
 
 ![MacDown logo](http://macdown.uranusjr.com/static/base/img/logo-160.png)
 

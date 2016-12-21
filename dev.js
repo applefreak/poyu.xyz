@@ -18,6 +18,7 @@ Metalsmith(__dirname)
 .use(drafts())
 .use(markdown())
 .use(dateFormatter({
+  dates: ['date', 'updated'],
   format: 'MM/DD/YYYY'
 }))
 .use(collections({
