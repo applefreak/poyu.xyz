@@ -28,7 +28,9 @@ Metalsmith(__dirname)
 		reverse: true
 	}
 }))
-.use(permalinks())
+.use(permalinks({
+	relative: false
+}))
 .use(layouts({
 	engine: 'handlebars',
 	partials: './partials'
