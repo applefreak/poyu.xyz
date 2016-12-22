@@ -6,6 +6,7 @@ var collections = require('metalsmith-collections');
 var dateFormatter = require('metalsmith-date-formatter');
 var drafts = require('metalsmith-drafts');
 var helpers = require('handlebars-helpers')();
+var postcss = require('metalsmith-postcss');
 
 Metalsmith(__dirname)
 .metadata({})
@@ -15,23 +16,29 @@ Metalsmith(__dirname)
 .use(drafts())
 .use(markdown())
 .use(dateFormatter({
-  dates: ['date', 'updated'],
-  format: 'MM/DD/YYYY'
+	dates: ['date', 'updated'],
+	format: 'MM/DD/YYYY'
 }))
 .use(collections({
-  page: {
-    sortBy: 'order'
-  },
-  projects: {
-    sortBy: 'date',
-    reverse: true
-  }
+	page: {
+		sortBy: 'order'
+	},
+	projects: {
+		sortBy: 'date',
+		reverse: true
+	}
 }))
 .use(permalinks())
 .use(layouts({
-  engine: 'handlebars',
-  partials: './partials'
+	engine: 'handlebars',
+	partials: './partials'
+}))
+.use(postcss({
+	plugins: {
+		'postcss-nested': {},
+		'cssnano': {}
+	}
 }))
 .build(function(err, files) {
-  if (err) { throw err; }
+	if (err) { throw err; }
 });
