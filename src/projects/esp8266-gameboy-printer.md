@@ -63,3 +63,6 @@ Kind people on the Internet helping me out with this project, thank you!
 * [Gameboy Link Cable](http://www.hardwarebook.info/Game_Boy_Link)
 * [Gameboy Printer Protocol](https://milesburton.com/File:Gameboy_Printer_Protocol.docx)
 
+## Expect Updates!
+
+I will add pictures of the projects here and hopefully fix those 2 bugs!
