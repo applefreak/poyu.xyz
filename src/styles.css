@@ -120,6 +120,7 @@ body {
 
 	footer {
 		font-style: italic;
+		margin-top: 10vh;
 		a {
 			border: none;
 		}
