@@ -9,6 +9,7 @@ var watch = require('metalsmith-watch');
 var serve = require('metalsmith-serve');
 var drafts = require('metalsmith-drafts');
 var helpers = require('handlebars-helpers')();
+var postcss = require('metalsmith-postcss');
 
 Metalsmith(__dirname)
 .metadata({})
@@ -42,8 +43,13 @@ Metalsmith(__dirname)
     "./partials/**/*": "**/*",
     "./layouts/**/*": "**/*",
   }
-})
-)
+}))
+.use(postcss({
+  plugins: {
+    'postcss-nested': {},
+    'cssnano': {}
+  }
+}))
 .use(serve())
 .build(function(err, files) {
   if (err) { throw err; }
