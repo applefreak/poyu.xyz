@@ -4,7 +4,7 @@ date: 2016-12-23
 layout: project.html
 collection: projects
 nav: projects
-draft: true
+draft: false
 ---
 
 # ESP8266 Gameboy Printer
@@ -47,7 +47,7 @@ Now the code and prototype is done, I want to make it in a small package so I ca
 
 ## Result
 
-The things works pretty great! There are few bugs I need to squash though. In the mean time, if you wish to build one yourself, check out my code on Github. Fork it, improve it, make pull requests! And of course, go out and take photos then enjoy brag them on your social network!
+The things works pretty great! There are few bugs I need to squash though. In the mean time, if you wish to build one yourself, [check out my code on Github](https://github.com/applefreak/esp8266-gameboy-printer). Fork it, improve it, make pull requests! And of course, go out and take photos then enjoy brag them on your social network!
 
 ### Known Bugs & Limitations
 
