@@ -4,7 +4,9 @@ date: 2016-12-23
 layout: project.html
 collection: projects
 nav: projects
+project: true
 draft: false
+description: A WIFI enabled device to emulate the Gameboy Printer, powered by ESP8266.
 ---
 
 # ESP8266 Gameboy Printer

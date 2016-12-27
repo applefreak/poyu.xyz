@@ -1,6 +1,24 @@
 <head>
 	<meta charset="UTF-8" />
-	<title>{{ title }}</title>
-	<meta name="description" content="{{ description }}">
 	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"/>
+	<title>{{ title }} - {{ site.base_title }}</title>
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:site_name" content="{{ site.site_name }}"/>
+
+	{{#if description }}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}" />
+	{{/if }}
+	
+	{{#if project}}
+	<meta property="og:type" content="article" />
+	{{else}}
+	<meta property="og:type" content="website" />
+	{{/if}}
+
+	<meta name="author" content="{{ site.author }}">
+	<meta property="og:author" content="{{ site.author }}">
+
+	<meta property="og:url" content="{{ site.baseurl }}{{#if path}}/{{ path }}/{{/if}}" />
+	<link rel="canonical" href="{{ site.baseurl }}{{#if path}}/{{ path }}/{{/if}}" />
 </head>
