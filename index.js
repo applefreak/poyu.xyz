@@ -9,7 +9,14 @@ var helpers = require('handlebars-helpers')();
 var postcss = require('metalsmith-postcss');
 
 Metalsmith(__dirname)
-.metadata({})
+.metadata({
+	site: {
+		baseurl: 'https://poyu.xyz',
+		author: 'Poyu Chen',
+		site_name: 'Poyu Chen\'s Website',
+		base_title: 'Poyu.xyz'
+	}
+})
 .source('./src')
 .destination('./build')
 .clean(true)

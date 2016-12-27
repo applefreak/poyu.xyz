@@ -4,7 +4,8 @@ title: Projects
 nav: projects
 collection: page
 order: 2
-project: true
+project-list: true
+description: Here is a list of projects I do for fun
 ---
 
 # Project Index
