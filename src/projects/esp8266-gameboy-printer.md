@@ -1,6 +1,7 @@
 ---
 title: ESP8266 Gameboy Printer
 date: 2016-12-23
+updated: 2017-02-09
 layout: project.html
 collection: projects
 nav: projects
@@ -12,6 +13,8 @@ description: A WIFI enabled device to emulate the Gameboy Printer, powered by ES
 # ESP8266 Gameboy Printer
 
 A WIFI enabled device to emulate the Gameboy Printer, powered by ESP8266.
+
+![Hand Held](/img/esp8266-gameboy-printer/handheld.jpg)
 
 ## Story
 
@@ -47,6 +50,8 @@ After a while of facepalming, I implemented the decoding in Processing, then usi
 
 Now the code and prototype is done, I want to make it in a small package so I can bring it out to the field and have some fun! I choose to use Wemos D1 Mini since it has its own voltage regulator and serial to USB chip. I don't have a Gameboy link cable handy so I teared it open and solder the 4 signals I need to a 2.54 polarized connector and heat shrink the cables. The connections is pretty straightforward, Pin 2 is Serial Out, Pin 3 Serial in, Pin 4 Clock, and Pin 6 Ground. The Pin numbers are printed on the PCB of the Gameboy.
 
+![Cables](/img/esp8266-gameboy-printer/cables.jpg)
+
 ## Result
 
 The things works pretty great! There are few bugs I need to squash though. In the mean time, if you wish to build one yourself, [check out my code on Github](https://github.com/applefreak/esp8266-gameboy-printer). Fork it, improve it, make pull requests! And of course, go out and take photos then enjoy brag them on your social network!
@@ -68,3 +73,5 @@ Kind people on the Internet helping me out with this project, thank you!
 ## Expect Updates!
 
 I will add pictures of the projects here and hopefully fix those 2 bugs!
+
+* Update 1: Added pictures of the finished product. (02/09/2017)

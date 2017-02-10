@@ -125,4 +125,8 @@ body {
 			border: none;
 		}
 	}
+
+	img {
+		max-width: 75%;
+	}
 }
