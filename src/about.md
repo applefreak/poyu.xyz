@@ -5,6 +5,7 @@ nav: about
 collection: page
 order: 3
 description: My name is Poyu Chen, I'm a Hardware hacker, software tinkerer, Sometimes photographs.
+priority: 0.9
 ---
 
 # About Me

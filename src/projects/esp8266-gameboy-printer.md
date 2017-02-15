@@ -1,7 +1,7 @@
 ---
 title: ESP8266 Gameboy Printer
 date: 2016-12-23
-updated: 2017-02-09
+lastmod: 2017-02-09
 layout: project.html
 collection: projects
 nav: projects

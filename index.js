@@ -1,4 +1,5 @@
 var Metalsmith  = require('metalsmith');
+var sitemap = require('metalsmith-mapsite');
 var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
@@ -23,7 +24,7 @@ Metalsmith(__dirname)
 .use(drafts())
 .use(markdown())
 .use(dateFormatter({
-	dates: ['date', 'updated'],
+	dates: ['date', 'lastmod'],
 	format: 'MM/DD/YYYY'
 }))
 .use(collections({
@@ -47,6 +48,11 @@ Metalsmith(__dirname)
 		'postcss-nested': {},
 		'cssnano': {}
 	}
+}))
+.use(sitemap({
+	hostname: 'https://poyu.xyz',
+	omitIndex: true,
+	changefreq: 'monthly'
 }))
 .build(function(err, files) {
 	if (err) { throw err; }
