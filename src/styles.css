@@ -137,4 +137,8 @@ body {
 		color: #ff1053;
 		background: #06070e;
 	}
+
+	.logo {
+		fill: #444444;
+	}
 }
