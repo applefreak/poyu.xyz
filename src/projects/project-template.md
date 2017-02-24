@@ -1,7 +1,7 @@
 ---
 title: A template for project entries
 date: 2016-01-01
-updated: 2016-01-02
+lastmod: 2016-01-02
 layout: project.html
 collection: projects
 nav: projects
