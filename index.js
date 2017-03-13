@@ -24,10 +24,6 @@ Metalsmith(__dirname)
 .clean(true)
 .use(drafts())
 .use(markdown())
-.use(dateFormatter({
-	dates: ['date', 'lastmod'],
-	format: 'MM/DD/YYYY'
-}))
 .use(collections({
 	page: {
 		sortBy: 'order'
@@ -36,6 +32,10 @@ Metalsmith(__dirname)
 		sortBy: 'date',
 		reverse: true
 	}
+}))
+.use(dateFormatter({
+	dates: ['date', 'lastmod'],
+	format: 'MM/DD/YYYY'
 }))
 .use(permalinks({
 	relative: false
