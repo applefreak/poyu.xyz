@@ -23,5 +23,6 @@ I mostly write JavaScript, PHP, and manage Linux servers. I'm a Serverless enthu
 Some of my work can be found here:
 
 * [Github](https://github.com/applefreak/)
+* [NPM](https://www.npmjs.com/~poyu)
 
 If you're interested in contacting me, feel free to [shoot me an email](mailto:me@poyu.xyz).
