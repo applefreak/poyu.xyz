@@ -13,6 +13,8 @@ description: A modern pager device for couples that are separated.
 
 A modern pager device for couples that are separated.
 
+<iframe src='https://gfycat.com/ifr/TheseHomelyFish' frameborder='0' scrolling='no' width='640' height='360' allowfullscreen></iframe>
+
 ## Story
 
 I'm moving back to the States from Taiwan, my significant other will be staying until I'm more financially stable. It was almost Christmas time so I decided to build a device that will remind us of each other. 
@@ -39,6 +41,8 @@ In order to send a message to the device, just publish the message on their resp
 
 The website only needs to handle publishing new messages from the web interface to MQTT broker, the server needs to have a periodical timer to update the days together information each day. To achieve the previous, I used Node.js as the backend runtime, and Express.js as the framework. For frontend, I chose Vue.js since I'm most familiar with it. Then have it running using PM2 and NGINX as reverse proxy.
 
+![web-interface](/img/msgme/web.png)
+
 This Node.js instance not only handles the HTTP requests from users, but also listens on the "request" MQTT topic, then it'll respond to each different requests sent by devices.
 
 I used a Systemd Timer to call up a Node.js script to update the days information every 24 hours. The script just publishes a message with body "days" to the "request" topic. Then the listening Node.js instance will respond by sending out the latest days informaion to the "days" topic.
@@ -56,6 +60,8 @@ The two buttons has interrupts set. They act as left and right button to switch 
 When the device receives a new MQTT message, it first check if the topic is its own device specific topic. If it is, then it'll display the indicator and put the message in the message variable. If the topic is "days" then it will simply change the "daysTogether" variable.
 
 ## Result
+
+![sandwiched](/img/msgme/sandwiched.jpg)
 
 The finished product looks natural and perfect, no compromises are made when choosing the parts. The display width fits the PCB perfectly, micro USB port is exposed from the top, and the two system buttons are hidden nicely under the first layer PCB.
 
