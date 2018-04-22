@@ -14,11 +14,13 @@ priority: 0.9
 
 Hi, my name is Poyu Chen, and I'm from Taiwan. Been in the States since early 2017.
 
-Majored in Electronics Engineering, but loves to program the Web. IoT is my favorite subject now, so I get the best of two worlds.
+Majored in Electronics Engineering, but loves to program the Web.
 
-I've interned at a wonderful company in Taiwan, [Tenten Creative](https://tenten.co) where I've learn a great lot about software development and client services.
+I used to work at a wonderful company in Taiwan, [Tenten Creative](https://tenten.co) where I've learn a great lot about software development and client services.
 
-I mostly write JavaScript, PHP, and manage Linux servers. I'm a Serverless enthusiast, Bitcoin evangelist, and Mandarin Chinese speaker!
+Right now I'm employed full time at [Supplyframe Inc.](https://supplyframe.com/), the company that operates a site I absolutely loved, [Hackaday.com](https://hackaday.com/). Being able to work at this company makes me incredibly happy and fulfilling.
+
+I mostly write JavaScript (Node.js & Browser), and manage Linux servers. I'm a Serverless enthusiast, ~~Bitcoin~~ Ethereum evangelist, and Mandarin Chinese speaker!
 
 Some of my work can be found here:
 
