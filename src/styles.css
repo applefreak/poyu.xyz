@@ -1,5 +1,5 @@
 body {
-	margin: 4vh auto;
+	margin: 0 auto;
 	background: #f2f2f2;
 	color: #444444;
 	font-family: 'Roboto Mono', monospace;
@@ -13,6 +13,7 @@ body {
 	.container {
 		min-height: 70vh;
 		margin-top: 2em;
+		margin-bottom: 3em;
 	}
 
 	code {
@@ -119,12 +120,16 @@ body {
 		}
 	}
 
-	header div a:first-of-type {
-		border-bottom: 0px;
+	header {
+		margin-top: 4vh;
+
+		div a:first-of-type {
+			border-bottom: 0px;
+		}
 	}
 
 	footer {
-		margin-top: 10vh;
+		margin-bottom: 4vh;
 		a {
 			&:first-of-type {
 				vertical-align: middle;
