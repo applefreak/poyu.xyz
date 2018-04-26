@@ -6,6 +6,7 @@ layout: project.html
 collection: projects
 nav: projects
 draft: false
+description: Macintosh Classic II Restoration Project
 ---
 
 # Macintosh Classic II Restoration Project
